@@ -15,3 +15,15 @@
         flex-wrap: wrap;
     }
 }
+
+.user-list-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}

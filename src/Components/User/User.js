@@ -22,11 +22,13 @@ const User = () => {
 
   return (
     <div className="container card-container">
-      <h1>User List</h1>
+      <div>
+        <h1 className="user-list-heading text-secondary px-2 pb-0">Users</h1>
+      </div>
       <div className="row">
         {users.map((user) => (
-          <div className="col-lg-4" key={user.id}>
-            <UserCards user={user} />
+          <div className="col-lg-4">
+            <UserCards key={user.id} user={user} />
           </div>
         ))}
       </div>

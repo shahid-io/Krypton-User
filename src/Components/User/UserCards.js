@@ -1,17 +1,26 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./UserCards.css";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import { API_URL } from "../../utils/Constants";
+import { BsBuildingAdd } from "react-icons/bs";
+import { AiOutlineLink, AiOutlineMail, AiOutlineUser } from "react-icons/ai";
 
 const UserCards = ({ user }) => {
   return (
     <div className="user-card card">
-      <h2>{user.name}</h2>
-      <p>Email: {user.email}</p>
-      <p>Company: {user.company.name}</p>
-      <p>Website: {user.website}</p>
-      <button className="btn btn-outline-success">Learn More</button>
+      <h2>
+        {<AiOutlineUser size={20} />} {user.name}
+      </h2>
+      <p>
+        {<AiOutlineMail size={20} />} {user.email}
+      </p>
+      <p>
+        {<BsBuildingAdd size={20} />} {user.company.name}
+      </p>
+      <p>
+        {<AiOutlineLink size={20} />} {user.website}
+      </p>
+      <Link to={"/usersdetails/" + user.id} key={user.id}>
+        <button className="btn btn-outline-success">Learn More</button>
+      </Link>
     </div>
   );
 };

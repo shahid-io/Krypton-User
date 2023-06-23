@@ -5,7 +5,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import User from "./Components/User/User";
 import About from "./Components/About/About";
-
+import UserDetails from "./Components/User/UserDetails";
 function App() {
   return (
     <div className="App">
@@ -13,7 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/user" element={<User />} />
-        <Route path="/about" element={<About/>}/>
+        <Route path="/about" element={<About />} />
+        <Route path="/usersdetails/:id" element={<UserDetails />} />
       </Routes>
     </div>
   );

@@ -1,29 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Header.css"
+import { BiLogoVisualStudio } from "react-icons/bi";
+import { AiOutlineHome } from "react-icons/ai";
+import { FcAbout } from "react-icons/fc";
+import { FiUsers } from "react-icons/fi";
+import "./Header.css";
+
 const Header = () => {
   return (
     <div className="container">
-      <nav>
-        <img alt="logo" src=""></img>
+      <nav className="nav-bar">
+        <Link to="/">
+          <BiLogoVisualStudio size={50} color="green" />
+        </Link>
         <ul className="navbar">
           <li>
             <Link to="/" className="nav-link">
-              Home
+              <p>{<AiOutlineHome size={20} />}</p>
             </Link>
           </li>
           <li>
             <Link to="/about" className="nav-link">
-              About
+              <p>{<FcAbout size={20} />}</p>
             </Link>
           </li>
           <li>
             <Link to="/user" className="nav-link">
-              User
+              <p>{<FiUsers size={20}/>}</p>
             </Link>
           </li>
         </ul>
       </nav>
+      <hr/>
     </div>
   );
 };

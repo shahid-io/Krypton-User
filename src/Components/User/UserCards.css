@@ -1,20 +1,40 @@
+.user-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .user-card {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: left;
 }
 
 .user-card h2 {
     font-size: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .user-card p {
-    margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 
-.user-card:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+.learn-more-btn {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #45a049;
 }

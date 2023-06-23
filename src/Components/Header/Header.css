@@ -1,16 +1,18 @@
-
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .navbar {
     list-style-type: none;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     justify-content: flex-end;
 }
+
 
 .nav-link {
     margin-left: 10px;
@@ -19,6 +21,53 @@ nav {
     font-weight: bold;
 }
 
+/*  */
+
+ul.navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.navbar li {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.navbar li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+ul.navbar li p {
+    margin: 0;
+}
+
+/* Optional: To adjust spacing between list items */
+ul.navbar li:not(:last-child) {
+    margin-right: 10px;
+}
+
+/*  */
 .nav-link:hover {
     color: #555;
+}
+
+.nav-bar {
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    align-items: stretch;
 }
