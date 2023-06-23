@@ -10,12 +10,6 @@
     justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-    .card-row {
-        flex-wrap: wrap;
-    }
-}
-
 .user-list-heading {
     font-family: "Roboto", sans-serif;
     font-size: 26px;

@@ -11,7 +11,7 @@ const Header = () => {
     <div className="container">
       <nav className="nav-bar">
         <Link to="/">
-          <BiLogoVisualStudio size={50} color="green" />
+          <BiLogoVisualStudio size={50} color="black"/>
         </Link>
         <ul className="navbar">
           <li>

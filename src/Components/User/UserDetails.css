@@ -3,7 +3,7 @@
     justify-content: center;
 }
 .user-details-card {
-    width: 60%;
+    width: 35vw;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 16px;
@@ -19,4 +19,11 @@
 
 .user-details-card p {
     margin-bottom: 8px;
+}
+.user-website{
+    text-decoration: none;
+}
+.return-btn{
+    align-items: end;
+    float: right;
 }

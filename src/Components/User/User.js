@@ -22,9 +22,6 @@ const User = () => {
 
   return (
     <div className="container card-container">
-      <div>
-        <h1 className="user-list-heading text-secondary px-2 pb-0">Users</h1>
-      </div>
       <div className="row">
         {users.map((user) => (
           <div className="col-lg-4">

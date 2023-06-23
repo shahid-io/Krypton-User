@@ -1,14 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { API_URL } from "../../utils/Constants";
 import "./UserDetails.css";
-
+import { AiOutlineUser, AiOutlinePhone, AiOutlineLink } from "react-icons/ai";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaRegAddressCard } from "react-icons/fa";
+import { BsBuildingAdd } from "react-icons/bs";
+import { GiReturnArrow } from "react-icons/gi";
 const UserDetails = () => {
   const { id } = useParams();
   console.log(id);
   const [user, setUser] = useState({});
 
+  const navigate = useNavigate();
+
+  const handleReturn = () => {
+    navigate("/user");
+  };
   useEffect(() => {
     const getUser = async () => {
       try {
@@ -24,17 +33,37 @@ const UserDetails = () => {
   return (
     <div className="container main-card">
       <div className="user-details-card">
-        <p>Username: {user?.username}</p>
-        <p>Email: {user?.email}</p>
         <p>
-          Address: {user?.address?.street}, {user?.address?.suite},{" "}
-          {user?.address?.city}, {user?.address?.zipcode}
+          {<AiOutlineUser color="green"/>} {user?.username}
         </p>
-        <p>Phone: {user?.phone}</p>
-        <p>Website: {user?.website}</p>
-        <p>Company: {user?.company?.name}</p>
-        <p>Catchphrase: {user?.company?.catchPhrase}</p>
-        <p>Business: {user?.company?.bs}</p>
+        <p>
+          {<HiOutlineMail />} {user?.email}
+        </p>
+        <p>
+          {<FaRegAddressCard />} {user?.address?.street}, {user?.address?.suite}
+          , {user?.address?.city}, {user?.address?.zipcode}
+        </p>
+        <p>
+          {<AiOutlinePhone />} {user?.phone}
+        </p>
+
+        {<AiOutlineLink />}
+        <Link className="user-website"> {user?.website}</Link>
+        <p>
+          {<BsBuildingAdd />} {user?.company?.name}
+        </p>
+        <p>
+          <strong>Catch Phrase</strong> {user?.company?.catchPhrase}
+        </p>
+        <p>
+          <strong>Business</strong> {user?.company?.bs}
+        </p>
+        <button
+          className="btn btn-outline-dark return-btn"
+          onClick={handleReturn}
+        >
+          <GiReturnArrow />
+        </button>
       </div>
     </div>
   );

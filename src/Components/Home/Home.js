@@ -3,22 +3,24 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="container card">
-      <img
-        alt="img"
-        src="https://images.unsplash.com/photo-1543269664-7eef42226a21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVzZXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
-        className="card-image"
-      />
-      <div className="card-overlay">
-        <div className="card-content">
-          <h2 className="card-title text-warning">Welcome to Krypton</h2>
-          <p className="card-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            maximus mauris vitae lectus fringilla, vitae lacinia quam feugiat.
-            Nunc euismod tellus ac purus varius, id gravida lectus posuere.
-          </p>
-        </div>
-      </div>
+    <div className="container home-card">
+      <h1>Home</h1>
+      <p className="home-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+        enim sit amet risus laoreet, sed fringilla dolor pulvinar. Vivamus
+        dapibus tristique arcu, in eleifend nisi consequat sit amet. Nullam
+        condimentum, sem ut condimentum lobortis, sapien erat tristique ligula,
+        in eleifend lectus velit at sapien. Nam euismod, est sed vulputate
+        pretium, nunc urna cursus lorem, ut viverra erat justo at quam.
+      </p>
+      <p className="home-content">
+        Integer sagittis risus nec neque efficitur, vel venenatis sem egestas.
+        Quisque feugiat diam ac facilisis mattis. Aliquam erat volutpat.
+        Suspendisse vehicula leo at malesuada luctus. Proin porttitor
+        sollicitudin turpis, in viverra nulla vestibulum nec. Ut auctor ipsum
+        purus, in feugiat nunc dapibus ut. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas.
+      </p>
     </div>
   );
 };
