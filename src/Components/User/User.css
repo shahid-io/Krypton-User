@@ -1,0 +1,17 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .card-row {
+        flex-wrap: wrap;
+    }
+}
