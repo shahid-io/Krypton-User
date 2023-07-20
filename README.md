@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase Logo" style="border-radius: 5px;"></img>
+<img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase Logo" style="border-radius: 5px;"></img>&nbsp
 <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js Logo" style="border-radius: 5px;">
 # Getting Started with Create React App
 
